@@ -18,6 +18,10 @@ substrate-wasm-builder={version = '4.0.0', git = 'https://github.com/paritytech/
 codec = {default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '2.0.0'}
 hex-literal= {optional = true, version = '0.3.1'}
 
+# Nicks Pallet
+pallet-nicks = { default-features = false, version = '3.0.0', git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
+
+
 # Substrate dependencies
 frame-benchmarking = {default-features = false, optional = true, version = '3.1.0', git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
 frame-executive = {default-features = false, version = '3.0.0', git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05'}
@@ -76,6 +80,7 @@ std = [
 	'pallet-timestamp/std',
 	'pallet-transaction-payment-rpc-runtime-api/std',
 	'pallet-transaction-payment/std',
+	'pallet-nicks/std',
 	'sp-api/std',
 	'sp-block-builder/std',
 	'sp-consensus-aura/std',
